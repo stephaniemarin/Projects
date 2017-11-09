@@ -1,0 +1,81 @@
+<!-- THIS IS THE SHOPPING PICK -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     
+    </head>
+
+<doby>
+    
+    
+    <script type="text/javascript" >
+
+        
+        
+function addValue(){
+    var jacket1price=0;
+    var jacket2price=0;
+    
+
+    
+    var includejacket1 = theForm.elements["includejacket1"];
+    var includejacket2 = theForm.elements["includejacket2"];
+    
+    // if the box is checked set price to 24.99
+    if(includejacket1.checked == true)
+        {
+            jacket1price = 24.99;
+        }
+    return jacket1price;
+   
+    if (includejackets.checked == true){
+        jacket2price = 14.99;
+        }
+    return jacket2price;
+        
+}
+      
+function purchaseTotal(){
+    var purchasePrice = addValue();
+    
+     //display the result
+    document.getElementById('totalPrice').innerHTML = "Total Price For purchase $"+purchasePrice;
+ 
+}
+
+}
+     
+     
+    </script>  
+    
+    
+    
+<table border="1">
+    <form action="" id="jacketForm" onSubmmit="return false">
+    <fieldset>
+    <tr>
+        <td><input type="checkbox" name="includejacket1" id="includejacket1" onClick="purchaseTotal()" /> $24.99 <br>
+            <label class="jacket1"> How many?<br>
+            <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket1num" name="jacket1num" onClick="purchaseTotal()"  /></label>
+        
+        </td>
+        <td><input type="checkbox" name="includejacket2" id="includejacket2" onClick="purchaseTotal()" /> $14.99 <br>
+            <label class="jacket2"> How many?<br>
+            <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket2num" name="jacket2num" onClick="purchaseTotal()"/></label>
+        
+                
+        </tr>
+        
+        <div id="totalPrice"></div>
+        </fieldset>
+    </form>
+        
+</table>
+ 
+    
+    </doby>
+
+
+</html>

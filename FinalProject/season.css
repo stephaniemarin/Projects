@@ -1,0 +1,154 @@
+.christmas  {font-family: 'Mountains of Christmas', cursive; background-color: red; height: 50px;
+		 border-radius: 5px; color: cornflowerblue;}
+
+.christmas1  {font-family: 'Sacramento', cursive; background-color: green; color: red; -webkit-text-stroke:1px red;}
+
+.halloween  {font-family: 'Creepster', cursive; background-color: black; color: black;  -webkit-text-stroke:1px red;}
+
+.christmas2 {font-family: 'Berkshire Swash', cursive; background-color: green; color: black; -webkit-text-stroke:2px red;}
+
+
+h1      {font-size: 250%;}
+
+.head   {font-family: 'Mountains of Christmas', cursive; background-color: lightblue; height: 50px;
+		 border-radius: 5px; color: cornflowerblue; }
+
+.main		{width: 80%;
+		 margin: 5% auto;}
+
+.body-bcolor  {background-color: aliceblue; }
+
+
+
+.images-welcome{
+    font-size: 0;
+    width: 261px;
+    margin: 0 auto;
+    float:inherit;
+}
+ 
+#botton-icon    {width: 25px;
+                margin: 0 auto;
+                float: inherit;}
+
+.images-welcome tr td a{
+    margin: 2px;
+    border: 4px solid transparent;
+    display: inline-block;
+    
+}
+
+.all    {
+    margin:auto;
+border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;}
+
+#jackets    {background-color: lavender}
+
+
+.color  {background-color:lavender; margin-left: 5%; margin-right: 2%; margin-bottom: 2%;
+	   border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+            width: 35%;}
+
+.welcsanta  {
+                width: 90%;
+                margin-left: 5%; margin-right: 2%; margin-bottom: 2%
+                height: 100%;
+		 float: left;
+}
+
+.welcstar  {
+                width: 75%;
+                margin-right: 5%; margin-bottom: 2%; margin-left: 5%;
+                height: 100%;
+        float: right;
+		}
+
+.welcpunkin   { 
+                width: 80%;
+                height: 70%;
+                margin-left: 5%; margin-right: 5%;
+		 float: left;
+	}
+
+
+.welcdots  {
+                width: 370px;
+                margin-right: 2%;margin-left: 2%;
+                height:100%;
+		 float:right;
+		 }
+
+.welccool  {
+                width: 90%;
+                margin-right: 5%; margin-left: 5%; margin-top: 5%;
+                height: 70%;
+		 float: right;
+		 }
+
+
+.body   {font-family: 'Itim', cursive;}
+
+
+
+                ul {list-style-type:none;
+                    margin: 1;
+                    padding: 1;
+                    overflow: hidden;
+                    background-color: lavender;
+                    color:  purple;
+                    font-size: 16;}
+            
+            li {    color: black;
+                    float: left;}
+
+            li a {
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration:none;}
+    
+         background-color: grey;
+		 height: 150px;
+		 border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;}
+
+            li a, .dropbtn {
+                    display: inline-block;
+                    
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;}
+
+            li a:hover, .dropdown:hover .dropbtn {
+                    background-color: lavender;}
+
+            
+
+            li a:hover {  background-color: lavender;
+                            color: purple;}
+            
+            .dropdown-content { display: none;
+                    position: absolute;
+                    background-color: lavender;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+                    
+            .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    font-size: 16;}
+
+
+            .dropdown-content a:hover {background-color: lavender;}
+            .dropdown:hover .dropdown-content { display:flex; }
+
+            

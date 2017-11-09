@@ -1,0 +1,191 @@
+.head   {font-family: 'Montez', cursive; background-color: gray; height: 60px;
+		 border-radius: 3px; color: antiquewhite; }
+
+.all    {width: 98%;
+    margin: 5% auto;
+border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;}
+
+ul {                list-style-type:none;
+                    margin: 1;
+                    padding: 1;
+                    overflow: hidden;
+                    color:  white;
+                    font-size: 16;}
+
+
+
+                ul {list-style-type:none;
+                    margin: 1;
+                    padding: 1;
+                    overflow: hidden;
+                    background-color: darkgray;
+                    color:  purple;
+                    font-size: 16;}
+
+            li {    color: black;
+                    float: left;}
+
+            li a {
+                    display: block;
+                    color: antiquewhite;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration:none;}
+
+         background-color: grey;
+		 height: 150px;
+		 border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;}
+
+            li a, .dropbtn {
+                    display: inline-block;
+
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;}
+
+            li a:hover, .dropdown:hover .dropbtn {
+                    color: azure;}
+
+
+
+            li a:hover { color: azure;}
+
+            .dropdown-content { display: none;
+                    position: absolute;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+            .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    font-size: 16;}
+
+
+            .dropdown-content a:hover {background-color: lavender;}
+            .dropdown:hover .dropdown-content { display:flex; }
+
+
+
+
+
+.font   {font-family: 'Pacifico', cursive; background-color: lightblue; height: 50px;
+		 border-radius:5px; color: cornflowerblue; 5px; -webkit-text-stroke:1px black;}
+
+.font2  {font-family: 'Shadows Into Light', cursive; background-color: lightblue; height: 50px;
+		 border-radius: 5px;  color: cornflowerblue; }
+.christmas  {font-family: 'Mountains of Christmas', cursive; background-color: lightblue; height: 50px;
+		 border-radius: 5px; color: cornflowerblue;}
+.font4  {font-family: 'Lobster Two', cursive; height: 50px;
+		 border-radius: 5px;  color: cornflowerblue;}
+.font5  {font-family: 'Special Elite', cursive; background-color: lightblue; height: 50px;
+		 border-radius: 5px; color: cornflowerblue;}
+
+.christmas1  {font-family: 'Sacramento', cursive; background-color: green; color: red; -webkit-text-stroke:1px red;}
+
+.font7  {font-family: 'Fruktur', cursive; background-color: lightblue; height: 50px;
+		 border-radius: 5px; color: cornflowerblue;  -webkit-text-stroke:2px black;}
+
+.halloween  {font-family: 'Creepster', cursive; background-color: black; color: black;  -webkit-text-stroke:1px red;}
+
+.font9  {font-family: 'Cabin Sketch', cursive; background-color: lightblue; height: 50px;
+		 border-radius: 5px; color: cornflowerblue; -webkit-text-stroke:2px black;}
+
+.font10 {font-family: 'Fredericka the Great', cursive; background-color: lightblue; height: 50px;
+		 border-radius: 5px; color: cornflowerblue;  -webkit-text-stroke:2px black;}
+
+.christmas2 {font-family: 'Berkshire Swash', cursive; background-color: green; color: black; -webkit-text-stroke:2px red;}
+
+h1      {font-size: 150%;}
+
+h2      {font-size: 50%;}
+
+.main		{width: 80%;
+		 margin: 5% auto;}
+
+
+.f1 {font-family: 'Mr Dafoe', cursive;            background-color: black; color: yellow;}
+.f2 {font-family: 'Montez', cursive;              background-color: black; color: yellow;}
+.f3 {font-family: 'Arizonia', cursive;            background-color: black; color: yellow;}
+.f4 {font-family: 'Kranky', cursive;              background-color: black; color: yellow;}
+.f5 {font-family: 'Mystery Quest', cursive;       background-color: black; color: yellow;}
+.f6 {font-family: 'Condiment', cursive;           background-color: black; color: yellow;}
+.f7 {font-family: 'Swanky and Moo Moo', cursive;  background-color: black; color: yellow;}
+.f8 {  font-family: 'Akronim', cursive;           background-color: black; color: yellow;}
+.f9 {font-family: 'Joti One', cursive;            background-color: black; color: yellow;}
+.f10 {font-family: 'Dr Sugiyama', cursive;        background-color: black; color: yellow;}
+.f11 {font-family: 'Ribeye Marrow', cursive;      background-color: black; color: yellow;}
+.f12 {font-family: 'Miltonian', cursive;          background-color: black; color: yellow;}
+.f13 {font-family: 'Passero One', cursive;        background-color: black; color: yellow;}
+.f14 {font-family: 'Molle', cursive;              background-color: black; color: yellow;}
+
+
+
+
+.body-bcolor  {background-color: aliceblue; }
+
+#botton-image{
+	background-image: url(cclothes/3sweater4.jpg);
+}
+
+#botton-submit{
+	background-color: pink;
+	color:white:
+	width: 25px;
+	height: 35px;
+}
+input :hover {
+	background-color: pink;
+	color:white:
+	width: 25px;
+	height: 35px;
+}
+
+
+#img-thumb{
+    width:auto;
+    height: 200px;
+		margin: 5%;
+}
+
+.images-welcome{
+    font-size: 0;
+    width: 261px;
+    margin: 0 auto;
+    float:inherit;
+}
+
+
+#containerbox {
+	width: auto;
+	height: 250px;
+}
+
+#botton-icon    {width: 25px;
+                margin: 0 auto;
+                float: inherit;}
+
+.images-welcome tr td a{
+    margin: 2px;
+    border: 4px solid transparent;
+    display: inline-block;
+
+}
+
+
+.color  {background-color:lavender; margin-left: 5%; margin-right: 2%; margin-bottom: 2%;
+	   border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+            width: 35%;}
+
+
+.body   {font-family: 'Itim', cursive;}
+
+

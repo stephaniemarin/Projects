@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://163.238.35.166/~kong/assignment3/order.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <title>Steven's Dumpling House</title>
+      <link href="./Dumpling House_files/css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./Dumpling House_files/main.css">
+      <script src="./Dumpling House_files/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript">
+         function clearInner() {
+         document.getElementById("change").innerHTML = "Please enter your order";
+             $("label.jacket1Box").fadeOut(200);
+             $("label.jacket2Box").fadeOut(200);
+             $("label.jacket3Box").fadeOut(200);
+             $("label.jacket4Box").fadeOut(200);
+             $("label.teaBox").fadeOut(200);
+             $("label.coffeeBox").fadeOut(200);
+             $("label.sauceBox").fadeOut(200);
+             $("label.napkinBox").fadeOut(200);
+             $("#porkpic").fadeOut(200)
+             $("#shrimppic").fadeOut(200)
+             $("#chivespic").fadeOut(200)
+             $("#combpic").fadeOut(200)
+             $("div.pic").fadeOut(200)
+           }
+           
+          function calc() {
+              var pork = document.getElementById("porkNum").value * 0.23
+              var shrimp = document.getElementById("shrimpNum").value * 0.36
+              var chives = document.getElementById("chivesNum").value * 0.28
+              var combination = document.getElementById("combNum").value * 0.54
+          
+              var tea = document.getElementById("teaNum").value * 1.75
+          
+              var coffee = document.getElementById("coffeeNum").value * 4.25
+          
+              var sauce = document.getElementById("sauceNum").value * 2.50
+          
+              var napkin = document.getElementById("napkinNum").value * 1.50
+          
+              var price = (pork + shrimp + chives + combination + tea + coffee + sauce + napkin).toFixed(2)
+          
+              var out;
+              
+              if (price == 0)
+                  out = "You have ordered nothing.\n\n"
+                  else
+             out = "Your order has been placed.\n\n";
+          
+              if (pork != 0)
+                  out += document.getElementById("porkNum").value + " Pork Dumplings \n"
+          
+              if (shrimp != 0)
+                  out += document.getElementById("shrimpNum").value + " Shrimp Dumplings \n"
+          
+              if (chives != 0)
+                  out += document.getElementById("chivesNum").value + " Chives Dumplings \n"
+          
+              if (combination != 0)
+                  out += document.getElementById("combNum").value + " Combination Dumplings \n"
+          
+              if (tea != 0)
+                  out += document.getElementById("teaNum").value + " Cups of Tea \n"
+          
+              if (coffee != 0)
+                  out += document.getElementById("coffeeNum").value + " Cups of Coffee \n"
+          
+              if (sauce != 0)
+                  out += document.getElementById("sauceNum").value + " Cups of Sauce \n"
+          
+              if (napkin != 0)
+                  out += document.getElementById("napkinNum").value + " Napkins \n"
+          
+              out += "\nTotal Price: $" + price;
+              alert(out)
+          }
+          
+          //Toggle Quantity
+          $(document).ready(function() {
+              $('#jacket1').on('change', function() {
+                  if (this.checked){
+                     $("#porkpic").fadeIn(500)
+                     $("div.pic").fadeIn(500)
+                     $("label.jacket1Box").fadeIn(400);
+                  }
+                  else {
+                     $("#porkpic").fadeOut(200)
+                     $("label.jacket1Box").fadeOut(200);
+                      document.form.porkNum.value = 0
+                  }
+              });
+          
+              $('#jacket2').on('change', function() {
+                  if (this.checked){
+                     $("#shrimppic").fadeIn(500)
+                     $("div.pic").fadeIn(500)
+                     
+                     $("label.jacket2Box").fadeIn(400);
+                  }
+                  else {
+                     $("#shrimppic").fadeOut(200)
+                      $("label.jacket2Box").fadeOut(200);
+                      document.form.shrimpNum.value = 0
+                  }
+              });
+              $('#jacket3').on('change', function() {
+                  if (this.checked){
+                      $("#chivespic").fadeIn(500)
+                      $("div.pic").fadeIn(500)
+              
+                      $("label.jacket3Box").fadeIn(400)
+                  }
+                  else {
+                     $("#chivespic").fadeOut(200)
+                     $("label.jacket3Box").fadeOut(200);
+                      document.form.chivesNum.value = 0
+                  }
+          
+              });
+          
+              $('#jacket4').on('change', function() {
+                  if (this.checked){
+                     $("#combpic").fadeIn(500)
+                     $("div.pic").fadeIn(500)
+                     $("label.jacket4Box").fadeIn(400);
+                  }
+                  else {
+                      $("#combpic").fadeOut(200)
+                      $("label.jacket4Box").fadeOut(200);
+                      document.form.combNum.value = 0
+                  }
+              });
+          
+              $('#tea').on('change', function() {
+                  if (this.checked)
+                      $("label.teaBox").fadeIn(400);
+                  else {
+                      $("label.teaBox").fadeOut(200);
+                      document.form.teaNum.value = 0
+                  }
+              });
+          
+              $('#coffee').on('change', function() {
+                  if (this.checked)
+                      $("label.coffeeBox").fadeIn(400);
+                  else {
+                      $("label.coffeeBox").fadeOut(200);
+                      document.form.coffeeNum.value = 0
+                  }
+              });
+              $('#sauce').on('change', function() {
+                  if (this.checked)
+                      $("label.sauceBox").fadeIn(400);
+                  else {
+                      $("label.sauceBox").fadeOut(200);
+                      document.form.sauceNum.value = 0
+                  }
+              });
+          
+              $('#napkin').on('change', function() {
+                  if (this.checked)
+                      $("label.napkinBox").fadeIn(400);
+                  else {
+                      $("label.napkinBox").fadeOut(200);
+                      document.form.napkinNum.value = 0
+                  }
+              });
+          
+              //Calculate
+              $(document).change(function() {
+          
+                  var pork = document.getElementById("jacket1Num").value * 0.23
+                  var shrimp = document.getElementById("jacket2Num").value * 0.36
+                  var chives = document.getElementById("jacket3Num").value * 0.28
+                  var combination = document.getElementById("jacket4Num").value * 0.54
+          
+                  var tea = document.getElementById("teaNum").value * 1.75
+          
+                  var coffee = document.getElementById("coffeeNum").value * 4.25
+          
+                  var sauce = document.getElementById("sauceNum").value * 2.50
+          
+                  var napkin = document.getElementById("napkinNum").value * 1.50
+          
+                  var price = (pork + shrimp + chives + combination + tea + coffee + sauce + napkin).toFixed(2)
+          
+                  var out = "You have selected:<br />";
+          
+                  if (pork != 0)
+                      out += document.getElementById("jacket1Num").value + " whaaaatt  <br />"
+          
+                  if (shrimp != 0)
+                      out += document.getElementById("jacket2Num").value + " Shrimp Dumplings <br />"
+          
+                  if (chives != 0)
+                      out += document.getElementById("jacket3Num").value + " Chives Dumplings <br />"
+          
+                  if (combination != 0)
+                      out += document.getElementById("jacket4Num").value + " Combination Dumplings <br />"
+          
+                  if (tea != 0)
+                      out += document.getElementById("teaNum").value + " Cups of Tea <br />"
+          
+                  if (coffee != 0)
+                      out += document.getElementById("coffeeNum").value + " Cups of Coffee <br />"
+          
+                  if (sauce != 0)
+                      out += document.getElementById("sauceNum").value + " Cups of Sauce <br />"
+          
+                  if (napkin != 0)
+                      out += document.getElementById("napkinNum").value + " Napkins <br />"
+          
+                  out += "<br />Total Price: $" + price;
+                  document.getElementById("change").innerHTML = out
+              });
+          });
+      </script>
+   </head>
+   <body>
+      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+         <tbody><tr>
+            <td width="100%" colspan="2">
+               <a href="http://163.238.35.166/~kong/assignment3/order.html"><img src="./Dumpling House_files/banner1.png" alt="Food" width="100%" height="100" border="0" id="Header"></a>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="1">
+               <p class="subheading" id="change">You have selected:<br><br>Total Price: $0.00</p>
+            </td>
+            <td style="width:70%">
+               <div class="pic" style="position: relative; left: 0px; top: 0px;">
+                  <img style="position:relative; top:0%; left:0%;" src="./Dumpling House_files/dumpling.png" width="50%" height="40%">
+                  <img id="porkpic" style="position: absolute; top: 5%; left: 50%;" src="./Dumpling House_files/pork.png" width="60%" height="100%">
+                  <img id="shrimppic" style="position:absolute; top:5%; left:50%; display:none" src="./Dumpling House_files/shrimp.png" width="60%" height="90%">
+                  <img id="chivespic" style="position:absolute; top:5%; left:50%; display:none" src="./Dumpling House_files/chives.png" width="60%" height="90%">
+                  <img id="combpic" style="position:absolute; top:5%; left:50%; display:none" src="./Dumpling House_files/comb.png" width="60%" height="90%">
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <!--FORM START--->
+               <form name="form" onsubmit="calc()">
+               <fieldset>
+                  <legend id="text">Dumpling Type: </legend>
+                  <label><img style="width:128px;height:128px;" src="clothes/3jacket4.jpg">
+                  <input type="checkbox" name="rainJacket" id="jacket1"> ($24.99)
+                  </label>
+                  <label><img style="width:128px;height:128px;" src="clothes/3jacket5.jpg">
+                  <input type="checkbox" name="rainJacket" id="jacket2">($14.99)
+                  </label>
+                  <label><img style="width:128px;height:128px;" src="clothes/4jacket1.jpg">
+                  <input type="checkbox" name="rainJacket" id="jacket3">($17.99)
+                  </label>
+                  <label><img style="width:128px;height:128px;" src="clothes/jacket1.jpg"> 
+                  <input type="checkbox" name="rainJacket" id="jacket4">($9.99)
+                  </label>
+               </fieldset>
+               <label class="jacket1box"> Pork Dumplings:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket1Num">
+               <br>
+               </label>
+               <label class="jacket2Box" style="display:none"> Shrimp Dumplings:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket2Num">
+               <br>
+               </label>
+               <label class="jacket3Box" style="display:none"> Chives Dumplings:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket3Num">
+               <br>
+               </label>
+               <label class="jacket4Box" style="display:none"> Combination Dumplings:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket4Num">
+               <br>
+               </label>
+               <br>
+               <fieldset>
+                  <legend id="text">Additional Items: </legend>
+                  <label>
+                  <input type="checkbox" name="other" id="tea">Tea ($1.75)
+                  </label>
+                  <label>
+                  <input type="checkbox" name="other" id="coffee">Coffee ($4.25)
+                  </label>
+                  <label>
+                  <input type="checkbox" name="other" id="sauce">Sauce ($2.50)
+                  </label>
+                  <label>
+                  <input type="checkbox" name="other" id="napkin">Napkin ($1.50)
+                  </label>
+               </fieldset>
+               <label class="teaBox" style="display:none"> Cups of Tea:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="teaNum">
+               <br>
+               </label>
+               <label class="coffeeBox" style="display:none"> Cups of Coffee:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="coffeeNum">
+               <br>
+               </label>
+               <label class="sauceBox" style="display:none"> Cups of Sauce:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="sauceNum">
+               <br>
+               </label>
+               <label class="napkinBox" style="display:none"> Napkins:
+               <input type="number" min="0" value="0" size="1" maxlength="2" id="napkinNum">
+               <br>
+               </label>
+               <p>
+                  <input type="submit" value="Place Order">
+                  <input type="reset" value="Reset Order" onclick="clearInner()">
+               </p>
+            </form></td>
+         </tr>
+      </tbody></table>
+   
+   <footer>
+      <small>© Copyright 2016, Steven Kong</small>
+   </footer>
+</body></html>

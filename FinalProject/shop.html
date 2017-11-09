@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--this tag is for get rank in your website
+1. keywords
+2.description of website
+3.author- so people find my name on websites i make
+4. canonical - give google information what page is most important -->
+    <meta name="keywords" content="websites, web development, seo">
+    <meta name="description" content="  computer science student, school work">
+    <meta name="author" content="Stephanie Marin">
+    <link rel="canonical" href="http://163.238.35.166/~marin/MyWebsite/Mysite.html"> 
+    
+    <!-- font links-->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cabin+Sketch|Creepster|Fredericka+the+Great|Fruktur|Lobster+Two|Mountains+of+Christmas|Pacifico|Sacramento|Shadows+Into+Light|Special+Elite|Itim" rel="stylesheet" href="petShop.css" type="text/css">
+    
+    <!-- css file-->
+    <link rel="stylesheet" type="text/css" href="petShop.css" href="icons/" >
+    
+    <!-- drop down sections-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript">
+    
+   function calc(){
+       
+        var    jackets1=document.getElementById("jacket1num").value * 24.99;
+        var    jackets2=document.getElementById("jacket2num").value * 14.99;
+        var    jackets3=document.getElementById("jacket2num").value * 14.99;
+        var    jackets4=document.getElementById("jacket2num").value * 14.99;
+       
+       var totalJackets = (jackets1 + jackets2 + jackets3 + jackets4).toFixed(2);
+       
+       var output;
+       
+       if (totalJackets == 0){
+           output "Your bag in empty";
+       }
+       else output "Your order has been placed! ";
+       
+        if (jackets1 != 0)
+                  output += document.getElementById("jacket1num").value + " jackets \n"
+        if (jackets2 != 0)
+                  output += document.getElementById("jacket2num").value + " jackets \n"
+        if (jackets3 != 0)
+                  output += document.getElementById("jacket3num").value + " jackets \n"
+        if (jackets4 != 0)
+                  output += document.getElementById("jacket4num").value + " jackets \n"
+        
+        output += "\nTotal Price: $" + totalJackets;
+              alert(output)
+              
+              
+       }       
+              
+        //Toggle Quantity
+          $(document).ready(function() {
+              $('#jacket1').on('change', function() {
+                  if (this.checked){
+                     $("#porkpic").fadeIn(500)
+                     $("div.pic").fadeIn(500)
+                     $("label.jacket1Box").fadeIn(400);
+                  }
+                  else {
+                     $("#porkpic").fadeOut(200)
+                     $("label.jacket1Box").fadeOut(200);
+                      document.form.jacket1num.value = 0
+                  }
+              });
+          
+              $('#jacket2').on('change', function() {
+                  if (this.checked){
+                     $("#shrimppic").fadeIn(500)
+                     $("div.pic").fadeIn(500)
+                     
+                     $("label.jacket2Box").fadeIn(400);
+                  }
+                  else {
+                     $("#shrimppic").fadeOut(200)
+                      $("label.jacket2Box").fadeOut(200);
+                      document.form.jacket2num.value = 0
+                  }
+              });
+              $('#jacket3').on('change', function() {
+                  if (this.checked){
+                      $("#chivespic").fadeIn(500)
+                      $("div.pic").fadeIn(500)
+              
+                      $("label.jacket3Box").fadeIn(400)
+                  }
+                  else {
+                     $("#chivespic").fadeOut(200)
+                     $("label.jacket3Box").fadeOut(200);
+                      document.form.jacket3num.value = 0
+                  }
+          
+              });
+          
+              $('#jacket4').on('change', function() {
+                  if (this.checked){
+                     $("#combpic").fadeIn(500)
+                     $("div.pic").fadeIn(500)
+                     $("label.jacket4Box").fadeIn(400);
+                  }
+                  else {
+                      $("#combpic").fadeOut(200)
+                      $("label.jacket4Box").fadeOut(200);
+                      document.form.jacket4num.value = 0
+                  }
+              });
+              
+        $(document).change(function() {
+        var    jackets1=document.getElementById("jacket1num").value * 24.99;
+        var    jackets2=document.getElementById("jacket2num").value * 14.99;
+        var    jackets3=document.getElementById("jacket3num").value * 17.99;
+        var    jackets4=document.getElementById("jacket4num").value * 9.99;
+       
+       var totalJackets = (jackets1 + jackets2 + jackets3 + jackets4).toFixed(2);
+       
+       var output = "Your seleccion ";
+       
+        if (jackets1 != 0)
+                  output += document.getElementById("jacket1num").value + " jackets \n"
+        if (jackets2 != 0)
+                  output += document.getElementById("jacket2num").value + " jackets \n"
+        if (jackets3 != 0)
+                  output += document.getElementById("jacket3num").value + " jackets \n"
+        if (jackets4 != 0)
+                  output += document.getElementById("jacket4num").value + " jackets \n"
+        
+        output += "<br />Total Price: $" + price;
+                  document.getElementById("change").innerHTML = output
+              });
+         });
+                
+
+    </script>
+    
+     <title>Puppy Shop</title>
+    
+    
+    </head>
+    
+    <!-- PRINCIPIO DE BODY-----------------------------------------------------------------------------------------  -->
+    <body class="font4" id="body-bcolor" width=90% lenght=90%>
+        
+        <div class="head"><h1>My Little Puppy</h1></div>
+    
+    <div class="all">
+     <center>
+        <ul>
+            <li><a href="welcome.html">Home</a></li>
+            <!--Clothes-->
+            <li class="dropdown"><a href="shop.html"> Clothing</a>
+                                <div class="dropdown-content">
+                                <a  href="#jackets" >Jackets</a>
+                                <a  href="#sweaters">Sweaters</a>
+                
+                        </div>
+
+                <!-- Season clothes -->
+            <li class="dropdown"><a href="Season.html">Season</a>
+                                <div class="dropdown-content" background-color=black>
+                                <a class="halloween" href="xxx">HALLOWEEN!!</a>
+                                <a class="christmas" href="xxx">CHRISTMAS</a>
+                        </div>
+            </li>
+                <!--shopping bag-->
+            <li><a href="Bag.html">Bag</a></li>
+                <!--contact Us-->
+            <li><a href="contact-us.html">Contact Us</a> </li>
+         
+         </ul>
+    </center>
+ </div>
+    
+    <!-- THIS IS THE END OF MENU BAR -->
+
+        
+
+<div class="all" >      
+  
+
+     
+<table class="all" width:90% lenght:100%>
+
+   <div width=78px height=100px id="pick-jackets">
+       
+    <td>  
+        <table  border="0.5">
+          
+                <thead>
+            
+                        <tr >         <th><h1>Jackets</h1></th>
+                                        <th></th><th></th>
+                                        <th><h1><button type="button" id="show-jacket"><center><a href="bag.php"> SUBMIT PURCHASE </center><img id="botton-icon" src="icons/dog_add.png"></button> 
+                                     
+                                        </h1></th>
+            
+                                            
+            <td colspan="1">
+               <p class="subheading" id="change">You have selected:<br><br>Total Price: $0.00</p>
+            </td>
+                                            
+                                            
+                        </tr>
+                </thead>
+
+        <form name="form" onsubmit="calc()" >
+           
+            <tr class="normal" id="jackets">  
+                <fieldset>
+                    <td ><img style="width:128px;height:128px;" src="clothes/3jacket4.jpg">
+                                    <label><p>Yellow Rain Jacket</p>
+                                    <input type=checkbox name=RainJacket value=Design id="jacket1" />($24.99)
+	                               </label>
+                        <br>
+                                            <label class="jacket1box">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket1num" />
+                                            </label>
+                  </td>
+                    <td><img style="width:128px;height:128px;" src="clothes/3jacket5.jpg">
+                                    <label><p>Red Rain Jacket</p>
+	                               <input type=checkbox name=RainJacket value=Design id="jacket2"/>($14.99)
+	                               </label>
+                        <br>
+                                            <label class="jack2box">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket2num" />
+                                            </label> 
+                 </td>
+                    <td><img style="width:128px;height:128px;" src="clothes/4jacket1.jpg"> 
+                                    <label><p>Red dots Rain Jacket</p>
+	                               <input type=checkbox name=RainJacket value=Design id="jacket3" />($17.99)
+	                               </label>
+                        <br>
+                                    <label class="jack3box" >How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket3num" />
+                                            </label>
+                 </td>
+                    <td><img style="width:128px;height:128px;" src="clothes/jacket1.jpg"> 
+                                    <label><p>Pink Rain Jacket</p>
+	                               <input type=checkbox name=RainJacket value=Design id="jacket4" />($9.99)
+	                               </label>
+                        <br>
+                                            <label class="jack4box">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="2" id="jacket4num" />
+                                            </label>  
+                     </td>
+                
+                </fieldset>
+
+                
+                
+                <div class="normal">
+                <tr   id="jackets" >    
+                            <td><img style="width:128px;height:128px;" src="clothes/jacket2.jpg"> 
+                                <label><p>Black Rain Jacket</p>
+	                           <input type=checkbox name=RainJacket value=Design id="jacket5" />($5.10)
+	                           </label><br>
+                                            <label class="jack5">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" name="jacket5num" />
+                                            </label>                                    
+                                
+                            </td>
+                            <td>><img style="width:128px;height:128px;" src="clothes/jacket3.jpg">
+                                <label><p>Wine Rain Jacket</p>
+	                           <input type=checkbox name=RainJacket value=Design id="jacket6" />($9.10)
+	                           </label><br>
+                                            <label class="jack6">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" name="jacket6num" />
+                                            </label>  
+                            </td>
+                            <td><img style="width:128px;height:128px;" src="clothes/wetjacket.jpg"> 
+                                <label><p>Yellow Rain Jacket</p>
+	                           <input type=checkbox name=RainJacket value=Design id="jacket7"/>($15.10)
+	                           </label><br>
+                                            <label class="jack7">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" name="jacket7num" />
+                                            </label>                                    
+                            </td>
+                </tr>
+            
+                </div>
+    
+                <p>
+                  <input type="submit" value="Place Order" href="bag.php"  >
+                  
+               </p>
+            </form>
+        </tr>
+            
+    </table>
+</td> 
+      
+</div>  
+            
+    
+   
+ 
+       <!-- end of jackets section -->            
+    
+    
+        
+  <div id="pick-sweaters">
+        <table border="0"  id="sweaters">
+            
+            <thead >
+           
+                <tr>  
+                        <th><h1>Sweaters</h1></th>
+                        <th><h1><button type="button" id="show-sweater"><center> Show </center><img id="botton-icon" src="icons/dog_add.png"></button> 
+                        <button type="button" id="hide-sweater"><center> Hide </center><img id="botton-icon" src="icons/dog_cross.png" ></button>
+                        </h1></th>
+                </tr>
+            </thead>
+            
+            
+             
+                <tr class="fast" id="jackets">   
+                
+                                                <td><img style="width:128px;height:128px;" src="clothes/sweater1.jpg">
+                                                <label><p>light-Gray Sweater</p>
+	                                           <input type=checkbox name=Sweaters value=Design name="sweater1" />($4.99)
+                                                </label>
+                                            </td>
+                                                <td><img style="width:128px;height:128px;" src="clothes/sweater2.jpg"> 
+                                                <label><p>Gray and Red Sweater</p>
+	                                           <input type=checkbox name=Sweaters value=Design name="sweater2" />($9.99)
+                                                </label>
+                                            </td>
+                                                <td><img style="width:128px;height:128px;" src="clothes/sweater3.jpg"> 
+                                                <label><p>Red Sweater</p>
+	                                           <input type=checkbox name=Sweaters value=Design name="sweater3" />($14.99)
+                                                </label>
+                                            </td>
+              
+                </tr>
+                <tr class="fast" id="jackets">   
+                                                <td><img style="width:128px;height:128px;" src="clothes/3sweater4.jpg">
+                                                <label><p>Black Sweater</p>
+	                                           <input type=checkbox name=Sweaters value=Design name="sweater4" />($14.99)
+                                                </label>                
+                                        </td>
+                
+                                                <td>><img style="width:128px;height:128px;" src="clothes/pinkdots.jpg">
+                                                <label><p>Pink white-dots Sweater</p>
+                                                <input type=checkbox name=Sweaters value=Design id="sweater5"/>($17.99)
+                                                </label>
+                                        </td>
+                
+           
+                </tr>
+            
+        </table>
+       
+    
+    </div>
+    
+    </table>
+    
+        <p>HEllo there  </p>
+    
+     </div> 
+</form>
+</body>
+        
+</html>

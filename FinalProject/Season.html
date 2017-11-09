@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title>Seasons</title>
+    <meta charset="utf-8">
+    
+        <!-- css file-->
+    <link rel="stylesheet" type="text/css" href="season.css">
+    
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cabin+Sketch|Creepster|Fredericka+the+Great|Fruktur|Lobster+Two|Mountains+of+Christmas|Pacifico|Sacramento|Shadows+Into+Light|Special+Elite|Itim" rel="stylesheet" href="petShop.css" type="text/css">
+    
+    <!-- drop down sections-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    </head>
+
+<body  width=90% lenght=90%>
+    <div class="head"><h1>My Little Puppy</h1></div>
+    
+    <div class="all">
+     <center>
+        <ul>
+            <li><a href="welcome.html">Home</a></li>
+            <!--Clothes-->
+            <li class="dropdown"><a href="shop.html"> Clothing</a>
+
+
+                <!-- Season clothes -->
+            <li class="dropdown"><a href="Season.html">Season</a>
+                                <div class="dropdown-content" background-color=black>
+                                <a class="halloween" href="xxx">HALLOWEEN!!</a>
+                                <a class="christmas" href="xxx">CHRISTMAS</a>
+                        </div>
+            </li>
+                <!--shopping bag-->
+            <li><a href="Bag.html">Bag</a></li>
+                <!--contact Us-->
+            <li><a href="contact-us.html">Contact Us</a> </li>
+         
+         </ul>
+    </center>
+ </div>
+    
+    
+    <!-- THIS IS THE END OF MENU BAR -->
+    
+    
+    
+    
+<div class="christmas" > 
+<table class="all" width:90% lenght:100%>
+
+   <div width=78px height=100px id="pick-jackets">
+       
+    <td>  
+        <table >
+          
+                <thead>
+            
+                        <tr >         <th  class="christmas" ><h1>Season</h1></th>
+                                        <th></th><th></th>
+                                        <th><h1><button type="button" id="show-jacket"><center> Show </center><img id="botton-icon" src="icons/dog_add.png"></button> 
+                                        <button type="button" id="hide-jacket"><center> Hide </center><img id="botton-icon" src="icons/dog_cross.png" ></button>
+                                        </h1></th>
+            
+                        </tr>
+                </thead>
+            <fieldset>
+                
+           
+            <tr class="normal" id="jackets">    
+                                <td ><img style="width:128px;height:128px;" src="clothes/santa.jpg">
+                                    <label><p>Yellow Rain Jacket</p>
+                                    <input type=checkbox name=RainJacket value=Design id="jacket1" />($24.99)
+	                               </label><br>
+                                            <label class="jack1">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" id="jacket1num" />
+                                            </label>
+                            </td>
+                                <td><img style="width:128px;height:128px;" src="clothes/santa2.jpg">
+                                    <label><p>Red Rain Jacket</p>
+	                               <input type=checkbox name=RainJacket value=Design id="jacket2"/>($14.99)
+	                               </label><br>
+                                            <label class="jack1">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" id="jacket2num" />
+                                            </label>                                    
+                            </td>
+                                <td><img style="width:128px;height:128px;" src="clothes/santa3.jpg"> 
+                                    <label><p>Red dots Rain Jacket</p>
+	                               <input type=checkbox name=RainJacket value=Design id="jacket3" />($17.99)
+	                               </label><br>
+                                            <label class="jack1">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" id="jacket3num" />
+                                            </label>                                    
+                                </td>
+                                <td><img style="width:128px;height:128px;" src="clothes/santa4.jpg"> 
+                                    <label><p>Pink Rain Jacket</p>
+	                               <input type=checkbox name=RainJacket value=Design id="jacket4" />($9.99)
+	                               </label><br>
+                                            <label class="jack1">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" id="jacket4num" />
+                                            </label>                                    
+                                    
+                            </td>
+        
+            
+            
+
+                
+        
+                <div class="normal">
+                <tr   id="jackets" >    
+                            <td><img style="width:128px;height:128px;" src="clothes/santa6.jpg"> 
+                                <label><p>Black Rain Jacket</p>
+	                           <input type=checkbox name=RainJacket value=Design id="jacket5" />($5.10)
+	                           </label><br>
+                                            <label class="jack1">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" id="jacket3num" />
+                                            </label>                                    
+                                
+                            </td>
+                            <td>><img style="width:128px;height:128px;" src="clothes/jacket3.jpg">
+                                <label><p>Wine Rain Jacket</p>
+	                           <input type=checkbox name=RainJacket value=Design id="jacket6" />($9.10)
+	                           </label><br>
+                                            <label class="jack1">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" id="jacket3num" />
+                                            </label>  
+                            </td>
+                            <td><img style="width:128px;height:128px;" src="clothes/wetjacket.jpg"> 
+                                <label><p>Yellow Rain Jacket</p>
+	                           <input type=checkbox name=RainJacket value=Design id="jacket7"/>($15.10)
+	                           </label><br>
+                                            <label class="jack1">How many?<br>
+                                                <input type="number" min="0" value="0" size="1" maxlength="5" id="jacket3num" />
+                                            </label>                                    
+                            </td>
+                </tr>
+            
+                </div>
+    
+                <p>
+                  <input type="submit" value="Place Order"/>
+                  
+               </p>
+
+            </tr>
+                
+          </fieldset>     
+    </table>
+</td> 
+
+    
+    </body>
+</html>

@@ -1,0 +1,9 @@
+#mainImage {
+	position:relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 600px;
+	background-position: top center;
+	
+}
