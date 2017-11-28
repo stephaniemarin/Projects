@@ -6,5 +6,7 @@ Final Project file, a Web Developing project, I used the idea of a Pet Store for
 This project contains the languages:
 PHP, HTML, JavaScript, CSS
 
-# The Home page is welcome.html
+<h4> The Home page is welcome.html</h4>
+
+
 
